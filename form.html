@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+    <h1 id="title"><span style= "color:darkgreen"style="font-size:50%">GEEK</span><span class="font-size:50%" style= "color:deepskyblue">STER</span>
+                
+            </h1>
+            <p id="description">
+                Thank you for taking the time to help us to improve the plateform
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+   <label for="name"style="color:deepskyblue">Name <span class="clue" style= "color:red">(*)</span></label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+    <label for="email"style="color:deepskyblue">Email <span class="clue" style= "color:red">(*)</span></label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+      <label for="phone"style="color:deepskyblue">Phone Number<span class="clue" style= "color:red">(*)</span></label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Address section -->
+            <div class="form-group">
+        <label for="address"style="color:deepskyblue">Address <span class="clue" style= "color:limegreen">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address" >
+            </div>
+            <!--  end of address section -->
+            <!-- Date section -->
+       <div class="form-group">
+    <label for="start" style="color:deepskyblue">Start date:</label>
+
+<input type="date" placeholder="Put Date" class="formControl" name="trip-start"
+       value="2021-09-25"
+       min="2020-01-01" max="2021-09-30">
+
+            <!-- Date Section -->
+
+            <!-- select section -->
+            <div class="form-group">
+         <p id="quest"style="color:deepskyblue">Which option best describe your current role ?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+    <p id="quest"style="color:deepskyblue">How you come to know about Geekster ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >Google Search
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="social-media"
+                    class="inputRadio"
+                    > Social Media
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="newspaper"
+                    class="inputRadio"
+                    > Article
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio"
+                    > Other
+                </label>
+            </div>
+    <!-- end of radio button -->
+
+      <!-- Checkbox section -->
+            <div class="form-group">
+    <p id="quest"style="color:deepskyblue">Would you like to see improved ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  Android App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Software Engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- member check -->
+            <div class="form-group">
+         <p id="quest"style="color:deepskyblue">Are you Geekster member?</p>
+   <select name="role" required id="dropdown" class="formControl">
+  <option value disabled selected >Select current role</option>
+         <option value="student">YES</option>
+           <option value="teacher">NO</option>
+             
+                </select>
+            </div>
+            <!-- End of member check -->
+            <!-- recommend section -->
+            <div class="form-group">
+      <p id="quest"style="color:deepskyblue">Would you recommend our website ? </p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Definitely
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >May be
+                </label>
+      <label for="">
+    <input type="radio" name="source" value="social-media"class="inputRadio">Not sure
+           
+                </label>
+            </div>
+            <!-- End of recommend Section -->
+            <!-- satisfaction section -->
+            <div class="form-group">
+      <p id="quest"style="color:deepskyblue">Are you satisfied with our training Pattern ? </p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Satisfied
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >Neutral
+                </label>
+      <label for="">
+    <input type="radio" name="source" value="social-media"class="inputRadio">Dissatisfied
+           
+                </label>
+            </div>
+            <!-- End of satisfaction section -->
+   <!-- End of checkbox section -->
+
+    <!-- Textarea section -->
+   <div class="form-group">
+  <p id="quest"style="color:deepskyblue">Give us your feedback</p>
+  
+   <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+   
+  </div>
+  
+   <div class="form-group">
+    <button type="submit" id="submit" class="btn" href=" https://geekster.in/  ">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
